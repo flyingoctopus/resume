@@ -92,8 +92,8 @@ class VincentVanHaaff < ActiveRecord::Base
 
     I am a passionate designer/developer with 5+ years commercial experience
     and 360° skills in the design, development and maintenance of modern,
-    user centred design, as well as engaging video games on both
-    the web and consol, with a strong interest in performance,
+    user centered design, as well as engaging video games on both
+    the web and console, with a strong interest in performance,
     engagement, clean code, and a pension for enjoying one's day.
 
     Besides work, I live in Vancouver with my lady-friend and our little baby, Lord Nibbler.
