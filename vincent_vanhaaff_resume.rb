@@ -7,12 +7,15 @@ module Skills
     {
       :programming_languages  => %w(Ruby Python PHP),
       :development_frameworks => %w(Rails Django Zend),
-      :database               => %w(MySQL Postres SQLite),
+      :database               => %w(MySQL Postres SQLite MongoDB Redis),
       :testing                => %w(Test::Unit MiniTest RSpec Shoulda 
                                       Cucumber Selenium
-                                     ),
-      :orms                   => %w(ActiveRecord Sequel),
-      :front_end              => %w(Actionscript Javascript CSS HTML openFrameworks Processing WebGL),
+                                    ),
+      :orms                   => %w(ActiveRecord Sequel Mongoid MongoMapper),
+      :front_end              => %w(Actionscript Javascript CSS HTML
+                                      OpenFrameworks Processing WebGL 
+                                      Backbone CoffeeScript
+                                    ),
       :scm                    => %w(Git Perforce Subversion),
       :web_servers            => %w(Nginx Apache),
       :app_servers            => %w(Merb Phusion Passenger mod_php WSGI)
@@ -30,21 +33,26 @@ module Experience
       def experience
         jobs = []
 
+        jobs << { :company  => "Coverall Crew",
+                  :industry => "Software as a Service, RoR Dojo",  
+                  :roles    => ["Technical Design", "Software Lead"],
+                  :when     => (7.months.ago...Time.now.to_s) }
+                  
         jobs << { :company  => "Blitzoo Games Inc.",
                   :industry => "Online Social Gaming",  
-                  :roles    => ["Software Engineer 2", "Platform Specialist"],
-                  :when     => (8.months.ago...Time.now.to_s) }
+                  :roles    => ["Software Engineer 9000", "Platform Specialist"],
+                  :when     => (1.year.ago...7.months.ago) }
 
         jobs << { :company  => "Games For Windows Live",
                   :industry => "Online Social Gaming, Platforms Expert",
                   :roles    => ["Software Engineer 2", "Platform Specialist"],
-                  :when     => (2.years.ago..6.month.ago) }
+                  :when     => (3.years.ago..1.year.ago) }
 
 
         jobs << { :company  => "BigPark",
                   :industry => "Video Gaming",
                   :roles    => ["User Experience Designer", "Software Developer", "Audio Engineer"],
-                  :when     => (3.years.ago..2.years.ago) }
+                  :when     => (4.years.ago..3.years.ago) }
 
         # TODO: add previous positions on request
 
