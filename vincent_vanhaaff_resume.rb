@@ -36,23 +36,23 @@ module Experience
         jobs << { :company  => "Coverall Crew",
                   :industry => "Software as a Service, RoR Dojo",  
                   :roles    => ["Technical Design", "Software Lead"],
-                  :when     => (7.months.ago...Time.now.to_s) }
+                  :when     => (1.year.ago...Time.now.to_s) }
                   
         jobs << { :company  => "Blitzoo Games Inc.",
                   :industry => "Online Social Gaming",  
                   :roles    => ["Software Engineer 9000", "Platform Specialist"],
-                  :when     => (1.year.ago...7.months.ago) }
+                  :when     => (2.years.ago...1.year.ago) }
 
         jobs << { :company  => "Games For Windows Live",
                   :industry => "Online Social Gaming, Platforms Expert",
                   :roles    => ["Software Engineer 2", "Platform Specialist"],
-                  :when     => (3.years.ago..1.year.ago) }
+                  :when     => (3.5.years.ago..2.years.ago) }
 
 
         jobs << { :company  => "BigPark",
                   :industry => "Video Gaming",
                   :roles    => ["User Experience Designer", "Software Developer", "Audio Engineer"],
-                  :when     => (4.years.ago..3.years.ago) }
+                  :when     => (5.years.ago..3.5.years.ago) }
 
         # TODO: add previous positions on request
 
