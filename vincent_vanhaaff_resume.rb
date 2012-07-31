@@ -1,3 +1,5 @@
+# encoding: utf-8
+
 require "active_support"
 require "active_record"
 
@@ -71,7 +73,7 @@ class VincentVanHaaff < ActiveRecord::Base
  
   has_one :passion, :through => "computing"
   has_many :skills, :through => "experience", :include => "practice"
-  has_and_belongs_to_many :projects, :through => "github", \
+  has_many :projects, :through => "github", 
                           :foreign_key => "github.com/flyingoctopus"
  
   validates_presence_of :innovation
@@ -96,8 +98,7 @@ class VincentVanHaaff < ActiveRecord::Base
   end
  
   def self.inspect
-    who =<<-END
-
+    who << "
     I am a passionate designer/developer with 5+ years commercial experience
     and 360° skills in the design, development and maintenance of modern,
     user centered design. I also create engaging experiences for installation and 
@@ -105,9 +106,7 @@ class VincentVanHaaff < ActiveRecord::Base
     engagement, clean code, and a pension for enjoying one's day.
 
     Besides work, I live in Vancouver with my lady-friend and our little baby, Lord Nibbler.
-    I love climbing, cycling, and good times!
-   
-    END
+    I love climbing, cycling, and good times!"
   end
  
   def self.method_missing(method, *args, &block)
