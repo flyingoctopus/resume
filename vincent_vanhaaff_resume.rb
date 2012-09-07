@@ -7,7 +7,7 @@ require "active_record"
 module Skills
   def skills
     {
-      :programming_languages  => %w(Ruby Python PHP),
+      :programming_languages  => %w(Ruby Python PHP Node),
       :development_frameworks => %w(Rails Django Zend),
       :database               => %w(MySQL Postres SQLite MongoDB Redis),
       :testing                => %w(Test::Unit MiniTest RSpec Shoulda 
@@ -47,7 +47,7 @@ module Experience
 
         jobs << { :company  => "Games For Windows Live",
                   :industry => "Online Social Gaming, Platforms Expert",
-                  :roles    => ["Software Engineer 2", "Platform Specialist"],
+                  :roles    => ["Software Engineer 2", "Platform Specialist", "User Experience Designer"],
                   :when     => (3.5.years.ago..2.years.ago) }
 
 
