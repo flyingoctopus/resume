@@ -7,7 +7,7 @@ require "active_record"
 module Skills
   def skills
     {
-      :programming_languages  => %w(Ruby Python PHP Node),
+      :programming_languages  => %w(Ruby Python PHP Node Cpp_openFrameworks Java_Processing Actionscript3),
       :development_frameworks => %w(Rails Django Zend),
       :database               => %w(MySQL Postres SQLite MongoDB Redis),
       :testing                => %w(Test::Unit MiniTest RSpec Shoulda 
@@ -20,7 +20,7 @@ module Skills
                                     ),
       :scm                    => %w(Git Perforce Subversion),
       :web_servers            => %w(Nginx Apache),
-      :app_servers            => %w(Merb Phusion Passenger mod_php WSGI)
+      :app_servers            => %w(Merb Phusion Passenger Mod_php WSGI)
 
     }
   end
