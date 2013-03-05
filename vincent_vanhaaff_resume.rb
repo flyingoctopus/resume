@@ -35,17 +35,27 @@ module Experience
       def experience
         jobs = []
 
+        jobs << { :company  => "flyingoctopus",
+                  :industry => "Event Management Company", "Installation and Sound Art", "Interactive Visuals",
+                  :roles    => ["Creative Director"],
+                  :when     => (5.year.ago...Time.now.to_s) }
+        
+        jobs << { :company  => "Hybridity",
+                  :industry => "Record Label", "Installation and Sound Art", "Interactive Visuals & Events",
+                  :roles    => ["Technical Director", "Consultant"],
+                  :when     => (1.year.ago...Time.now.to_s) }
+                  
         jobs << { :company  => "Coverall Crew",
                   :industry => "Software as a Service, RoR Dojo",  
-                  :roles    => ["Technical Design", "Software Lead"],
-                  :when     => (1.year.ago...Time.now.to_s) }
+                  :roles    => ["Technical Design", "Technical Lead"],
+                  :when     => (2.year.ago...6.months.ago) }
                   
         jobs << { :company  => "Blitzoo Games Inc.",
                   :industry => "Online Social Gaming",  
-                  :roles    => ["Software Engineer 9000", "Platform Specialist"],
+                  :roles    => ["Software Lead", "Platform Specialist"],
                   :when     => (2.years.ago...1.year.ago) }
 
-        jobs << { :company  => "Games For Windows Live",
+        jobs << { :company  => "Microsoft",
                   :industry => "Online Social Gaming, Platforms Expert",
                   :roles    => ["Software Engineer 2", "Platform Specialist", "User Experience Designer"],
                   :when     => (3.5.years.ago..2.years.ago) }
@@ -53,8 +63,8 @@ module Experience
 
         jobs << { :company  => "BigPark",
                   :industry => "Video Gaming",
-                  :roles    => ["User Experience Designer", "Software Developer", "Audio Engineer"],
-                  :when     => (5.years.ago..3.5.years.ago) }
+                  :roles    => ["User Experience Designer", "Software Developer", "Chief Audio Engineer"],
+                  :when     => (5.5.years.ago..3.years.ago) }
 
         # TODO: add previous positions on request
 
