@@ -7,6 +7,8 @@ require "active_record"
 module Skills
   def skills
     {
+      :direction              => %w(User_Experience_Design Sound_Design Product_Design 
+                                    Behaviour_Design Systems_Engineering)
       :programming_languages  => %w(Ruby Python PHP Node Cpp_openFrameworks Java_Processing Actionscript3),
       :development_frameworks => %w(Rails Django Zend),
       :database               => %w(MySQL Postres SQLite MongoDB Redis),
