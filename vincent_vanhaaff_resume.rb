@@ -59,7 +59,7 @@ module Experience
                   :when     => (2.years.ago...1.year.ago) }
 
         jobs << { :company  => "Microsoft",
-                  :industry => "Online Social Gaming, Platforms Expert",
+                  :industry => "Online Social Gaming, Platforms Expert", "Computer Vision Expert",
                   :roles    => ["Software Engineer 2", "Platform Specialist", "User Experience Designer"],
                   :when     => (3.5.years.ago..2.years.ago) }
 
