@@ -39,17 +39,17 @@ module Experience
         jobs = []
 
         jobs << { :company  => "flyingoctopus",
-                  :industry => "Event Management Company", "Installation and Sound Art", "Interactive Visuals",
+                  :industry => "Event Management Company, Installation and Sound Art, Interactive Visuals",
                   :roles    => ["Creative Director"],
                   :when     => (5.year.ago...Time.now.to_s) }
         
         jobs << { :company  => "Hybridity",
-                  :industry => "Record Label", "Installation and Sound Art", "Interactive Visuals & Events",
+                  :industry => "Record Label, Installation and Sound Art, Interactive Visuals & Events",
                   :roles    => ["Technical Director", "Consultant"],
                   :when     => (1.year.ago...Time.now.to_s) }
                   
         jobs << { :company  => "Coverall Crew",
-                  :industry => "Software as a Service, RoR Dojo",  
+                  :industry => "Software as a Service, RoR Dojo", 
                   :roles    => ["Technical Design", "Technical Lead"],
                   :when     => (3.year.ago...2.months.ago) }
                   
@@ -59,7 +59,7 @@ module Experience
                   :when     => (3.years.ago...2.year.ago) }
 
         jobs << { :company  => "Microsoft",
-                  :industry => "Online Social Gaming, Platforms Expert", "Computer Vision Expert",
+                  :industry => "Online Social Gaming, Platforms Expert, Computer Vision Expert",
                   :roles    => ["Software Engineer 2", "Platform Specialist", "User Experience Designer"],
                   :when     => (4.5.years.ago..3.years.ago) }
 
