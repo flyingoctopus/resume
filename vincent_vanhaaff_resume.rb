@@ -107,19 +107,20 @@ class VincentVanHaaff < ActiveRecord::Base
   end  
  
   def self.contact
-    `open http://##{first_name.downcase}.##{last_name.downcase}.com/contact/`
+    `open mailto:##{first_name.downcase}@##{last_name.downcase}.com`
   end
  
   def self.inspect
     who << "
-    I am a passionate designer/developer with 5+ years commercial experience
-    and 360° skills in the design, development and maintenance of modern,
+    I am a passionate designer/developer with nearly ten years of commercial experience
+    and full-stack skills in the design, development and maintenance of modern,
     user centered design. I also create engaging experiences for installation and 
     video games on both the web and console, with a strong interest in performance,
     engagement, clean code, and a pension for enjoying one's day.
 
-    Besides work, I live in Vancouver with my lady-friend and our little baby, Lord Nibbler.
-    I love climbing, cycling, and good times!"
+    Besides work, I am a co-founder of Vancouver Maker Faire as well as Vancouver Hackspace, 
+    educator, and artist while living in Vancouver with my cat, Lord Nibbler. 
+    I love climbing, cycling, good eats, and good times!"
   end
  
   def self.method_missing(method, *args, &block)
