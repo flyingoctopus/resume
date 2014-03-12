@@ -66,7 +66,7 @@ module Experience
 
         jobs << { :company  => "BigPark",
                   :industry => "Video Gaming",
-                  :roles    => ["User Experience Designer", "Software Developer", "Chief Audio Engineer"],
+                  :roles    => ["User Experience Designer", "Software Developer", "Sound Designer"],
                   :when     => (6.years.ago..4.years.ago) }
 
         # TODO: add previous positions on request
