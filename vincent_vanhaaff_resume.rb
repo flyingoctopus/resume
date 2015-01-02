@@ -44,7 +44,7 @@ module Experience
                   :when     => (5.year.ago...Time.now.to_s) }
 
         jobs << { :company  => "Rouxbe Cooking School",
-                  :industry => "Remote Education, Culinary Health and Wellness, Learning and Content Management System Development",
+                  :industry => "Web and Mobile Remote Education, Culinary Health and Wellness, Learning and Content Management System Development",
                   :roles    => ["Chief Technical Officer"],
                   :when     => (1.year.ago...Time.now.to_s) }
 
