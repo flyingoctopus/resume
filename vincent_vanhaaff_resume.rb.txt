@@ -9,11 +9,10 @@ module Skills
     {
       :direction              => %w(User_Experience_Design Sound_Design Product_Design 
                                       Behaviour_Design Systems_Engineering Startup_Consulting
-                                      Data_Visualization
                                     ),
-      :programming_languages  => %w(Ruby objc Python Node PHP Scala Cpp_openFrameworks Java_Processing Actionscript3 Apex),
+      :programming_languages  => %w(Ruby objc Python Node PHP Scala Cpp_openFrameworks Java_Processing Actionscript3),
       :development_frameworks => %w(Rails Django Zend),
-      :database               => %w(Salesforce MySQL Postres SQLite MongoDB Redis),
+      :database               => %w(MySQL Postres SQLite MongoDB Redis),
       :testing                => %w(Test::Unit MiniTest RSpec Shoulda 
                                       Cucumber Selenium
                                     ),
@@ -40,19 +39,14 @@ module Experience
         jobs = []
 
         jobs << { :company  => "flyingoctopus",
-                  :industry => "Technical Consulting, Installation and Sound Art, Interactive Visuals",
+                  :industry => "Event Management Company, Installation and Sound Art, Interactive Visuals",
                   :roles    => ["Creative Director"],
                   :when     => (5.year.ago...Time.now.to_s) }
-
-        jobs << { :company  => "Newland Systems/Accent Steel Manufacturing",
-                  :industry => "Brewing Equipment Manufacturer",
-                  :roles    => ["Salesforce Consultant, Database Management, Front-End Developer"],
-                  :when     => (1.year.ago...Time.now.to_s) }
 
         jobs << { :company  => "Rouxbe Cooking School",
                   :industry => "Web and Mobile Remote Education, Culinary Health and Wellness, Learning and Content Management System Development",
                   :roles    => ["Chief Technical Officer"],
-                  :when     => (2.5.year.ago...1.year.ago) }
+                  :when     => (1.year.ago...Time.now.to_s) }
 
         jobs << { :company  => "Hybridity",
                   :industry => "Record Label, Installation and Sound Art, Interactive Visuals & Events",
