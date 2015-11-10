@@ -13,7 +13,7 @@ module Skills
                                     ),
       :programming_languages  => %w(Ruby objc Python Node PHP Scala Cpp_openFrameworks Java_Processing Actionscript3 Apex),
       :development_frameworks => %w(Rails Django Zend),
-      :database               => %w(Salesforce MySQL Postres SQLite MongoDB Redis),
+      :database               => %w(MySQL Postres SQLite MongoDB Redis Salesforce),
       :testing                => %w(Test::Unit MiniTest RSpec Shoulda 
                                       Cucumber Selenium
                                     ),
@@ -42,7 +42,7 @@ module Experience
         jobs << { :company  => "flyingoctopus",
                   :industry => "Technical Consulting, Installation and Sound Art, Interactive Visuals",
                   :roles    => ["Creative Director"],
-                  :when     => (5.year.ago...Time.now.to_s) }
+                  :when     => (6.year.ago...Time.now.to_s) }
 
         jobs << { :company  => "Newland Systems/Accent Steel Manufacturing",
                   :industry => "Brewing Equipment Manufacturer",
@@ -53,6 +53,11 @@ module Experience
                   :industry => "Web and Mobile Remote Education, Culinary Health and Wellness, Learning and Content Management System Development",
                   :roles    => ["Chief Technical Officer"],
                   :when     => (2.5.year.ago...1.year.ago) }
+
+        jobs << { :company  => "Crossfader.fm",
+                  :industry => "Native Mobile Music/Entertainment App, Social Network and Community-contributed Internet Radio Station",
+                  :roles    => ["Founder & CTO"],
+                  :when     => (3.5.year.ago...2.5.year.ago) }
 
         jobs << { :company  => "Hybridity",
                   :industry => "Record Label, Installation and Sound Art, Interactive Visuals & Events",
