@@ -7,20 +7,20 @@ require "active_record"
 module Skills
   def skills
     {
-      :direction              => %w(User_Experience_Design Sound_Design Product_Design 
-                                      Behaviour_Design Systems_Engineering Startup_Consulting
-                                      Data_Visualization
+      :direction              => %w(User_Experience_Design Product_Design Behaviour_Design 
+                                      Sound_Design Systems_Engineering Data_Visualization
+                                      Startup_Consulting Data_Driven_Intelligence
                                     ),
-      :programming_languages  => %w(Ruby objc Python Node PHP Scala Cpp_openFrameworks Java_Processing Actionscript3 Apex),
-      :development_frameworks => %w(Rails Django Zend),
+      :programming_languages  => %w(Ruby Objc Python JS Node PHP Scala Cpp_openFrameworks Java_Processing Actionscript3 Apex),
+      :development_frameworks => %w(Rails Django Zend Drupal),
       :database               => %w(MySQL Postres SQLite MongoDB Redis Salesforce),
       :testing                => %w(Test::Unit MiniTest RSpec Shoulda 
                                       Cucumber Selenium
                                     ),
       :orms                   => %w(ActiveRecord Sequel Mongoid MongoMapper),
-      :front_end              => %w(Actionscript Javascript CSS HTML
+      :front_end              => %w(Angular React_js React Javascript CSS HTML
                                       OpenFrameworks Processing WebGL 
-                                      Backbone CoffeeScript
+                                      Backbone Angular CoffeeScript Actionscript
                                     ),
       :scm                    => %w(Git Perforce Subversion),
       :web_servers            => %w(Nginx Apache),
@@ -44,9 +44,14 @@ module Experience
                   :roles    => ["Creative Director"],
                   :when     => (6.year.ago...Time.now.to_s) }
 
+        jobs << { :company  => "David Suzuki Foundation",
+                  :industry => "Non profit",
+                  :roles    => ["Data Evangelist", "Salesforce Consultant", "Database Management", "Analytics and Business Intelligence"],
+                  :when     => (3.months.ago...Time.now.to_s) }
+                  
         jobs << { :company  => "Newland Systems/Accent Steel Manufacturing",
                   :industry => "Brewing Equipment Manufacturer",
-                  :roles    => ["Salesforce Consultant, Database Management, Front-End Developer"],
+                  :roles    => ["Salesforce Consultant", "Database Management", "Front-End Developer"],
                   :when     => (1.year.ago...Time.now.to_s) }
 
         jobs << { :company  => "Rouxbe Cooking School",
@@ -56,7 +61,7 @@ module Experience
 
         jobs << { :company  => "Crossfader.fm",
                   :industry => "Native Mobile Music/Entertainment App, Social Network and Community-contributed Internet Radio Station",
-                  :roles    => ["Founder & CTO"],
+                  :roles    => ["Co-founder"],
                   :when     => (3.5.year.ago...2.5.year.ago) }
 
         jobs << { :company  => "Hybridity",
