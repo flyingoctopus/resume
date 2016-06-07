@@ -11,7 +11,9 @@ module Skills
                                       Sound_Design Systems_Engineering Data_Visualization
                                       Startup_Consulting Data_Driven_Intelligence
                                     ),
-      :programming_languages  => %w(Ruby Objc Python JS Node PHP Scala Cpp_openFrameworks Java_Processing Actionscript3 Apex),
+      :programming_languages  => %w(Ruby Objc Python JS Node PHP Scala Cpp openFrameworks 
+                                      Java Processing C# dotNet Actionscript3 Apex
+                                    ),
       :development_frameworks => %w(Rails Django Zend Drupal),
       :database               => %w(MySQL Postres SQLite MongoDB Redis Salesforce),
       :testing                => %w(Test::Unit MiniTest RSpec Shoulda 
