@@ -42,12 +42,17 @@ module Experience
         jobs << { :company  => "flyingoctopus",
                   :industry => "Technical Consulting, Installation and Sound Art, Interactive Visuals",
                   :roles    => ["Creative Director"],
-                  :when     => (6.year.ago...Time.now.to_s) }
+                  :when     => (8.year.ago...Time.now.to_s) }
+
+        jobs << { :company  => "Vancouver Airport Authority",
+                  :industry => "Automated Border Control & Biometrics",
+                  :roles    => ["Biometrics Research and Design", "Hardware Research", "ISO Compliance Research", "Optical Analysis"],
+                  :when     => (3.months.ago...Time.now.to_s) }
 
         jobs << { :company  => "David Suzuki Foundation",
                   :industry => "Non profit",
                   :roles    => ["Data Evangelist", "Salesforce Consultant", "Database Management", "Analytics and Business Intelligence"],
-                  :when     => (3.months.ago...Time.now.to_s) }
+                  :when     => (10.months.ago...3.months.ago) }
                   
         jobs << { :company  => "Newland Systems/Accent Steel Manufacturing",
                   :industry => "Brewing Equipment Manufacturer",
@@ -67,28 +72,28 @@ module Experience
         jobs << { :company  => "Hybridity",
                   :industry => "Record Label, Installation and Sound Art, Interactive Visuals & Events",
                   :roles    => ["Technical Director", "Consultant"],
-                  :when     => (2.year.ago...1.year.ago) }
+                  :when     => (3.year.ago...2.year.ago) }
 
         jobs << { :company  => "Coverall Crew",
                   :industry => "Software as a Service, RoR Dojo", 
                   :roles    => ["Technical Design", "Technical Lead"],
-                  :when     => (3.year.ago...1.year.ago) }
+                  :when     => (4.year.ago...2.year.ago) }
 
         jobs << { :company  => "Blitzoo Games Inc.",
                   :industry => "Online Social Gaming",  
                   :roles    => ["Software Lead", "Platform Specialist"],
-                  :when     => (4.years.ago...3.year.ago) }
+                  :when     => (5.years.ago...4.year.ago) }
 
         jobs << { :company  => "Microsoft",
                   :industry => "Online Social Gaming, Platforms Expert, Computer Vision Expert",
                   :roles    => ["Software Engineer 2", "Platform Specialist", "User Experience Designer"],
-                  :when     => (5.5.years.ago..4.years.ago) }
+                  :when     => (6.5.years.ago..5.years.ago) }
 
 
         jobs << { :company  => "BigPark",
                   :industry => "Video Gaming",
                   :roles    => ["User Experience Designer", "Software Developer", "Sound Designer"],
-                  :when     => (7.years.ago..4.years.ago) }
+                  :when     => (8.years.ago..5.years.ago) }
 
         # TODO: add previous positions on request
 
