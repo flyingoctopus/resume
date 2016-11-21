@@ -49,27 +49,27 @@ module Experience
         jobs << { :company  => "Vancouver Airport Authority",
                   :industry => "Automated Border Control & Biometrics",
                   :roles    => ["Biometrics Research and Design", "Hardware Research", "ISO Compliance Research", "Optical Analysis"],
-                  :when     => (3.months.ago...Time.now.to_s) }
+                  :when     => (9.months.ago...3.months.ago) }
 
         jobs << { :company  => "David Suzuki Foundation",
                   :industry => "Non profit",
                   :roles    => ["Data Evangelist", "Salesforce Consultant", "Database Management", "Analytics and Business Intelligence"],
-                  :when     => (10.months.ago...3.months.ago) }
+                  :when     => (1.year.ago...9.months.ago) }
 
         jobs << { :company  => "Newland Systems/Accent Steel Manufacturing",
                   :industry => "Brewing Equipment Manufacturer",
                   :roles    => ["Salesforce Consultant", "Database Management", "Front-End Developer"],
-                  :when     => (1.year.ago...Time.now.to_s) }
+                  :when     => (1.5.year.ago...Time.now.to_s) }
 
         jobs << { :company  => "Rouxbe Cooking School",
                   :industry => "Web and Mobile Remote Education, Culinary Health and Wellness, Learning and Content Management System Development",
                   :roles    => ["Chief Technical Officer"],
-                  :when     => (2.5.year.ago...1.year.ago) }
+                  :when     => (3.year.ago...1.5.year.ago) }
 
         jobs << { :company  => "Crossfader.fm",
                   :industry => "Native Mobile Music/Entertainment App, Social Network and Community-contributed Internet Radio Station",
                   :roles    => ["Co-founder"],
-                  :when     => (3.5.year.ago...2.5.year.ago) }
+                  :when     => (4.year.ago...3.year.ago) }
 
         jobs << { :company  => "Hybridity",
                   :industry => "Record Label, Installation and Sound Art, Interactive Visuals & Events",
