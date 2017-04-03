@@ -49,7 +49,7 @@ module Experience
         jobs << { :company  => "Vancouver Airport Authority",
                   :industry => "Automated Border Control & Biometrics",
                   :roles    => ["Biometrics Research and Design", "Hardware Research", "ISO Compliance Research", "Optical Analysis"],
-                  :when     => ("2016.03.01".to_date..."07.01.16".to_date) }
+                  :when     => ("2016.03.01".to_date..."2016.07.01".to_date) }
 
         jobs << { :company  => "David Suzuki Foundation",
                   :industry => "Non profit",
