@@ -44,58 +44,63 @@ module Experience
         jobs << { :company  => "flyingoctopus",
                   :industry => "Technical Consulting, Installation and Sound Art, Interactive Visuals",
                   :roles    => ["Creative Director"],
-                  :when     => (8.year.ago...Time.now.to_s) }
+                  :when     => ("2006.05.01".to_date...Time.now.to_s) }
 
         jobs << { :company  => "Vancouver Airport Authority",
                   :industry => "Automated Border Control & Biometrics",
                   :roles    => ["Biometrics Research and Design", "Hardware Research", "ISO Compliance Research", "Optical Analysis"],
-                  :when     => (9.months.ago...3.months.ago) }
+                  :when     => ("2016.03.01".to_date..."07.01.16".to_date) }
 
         jobs << { :company  => "David Suzuki Foundation",
                   :industry => "Non profit",
-                  :roles    => ["Data Evangelist", "Salesforce Consultant", "Database Management", "Analytics and Business Intelligence"],
-                  :when     => (1.year.ago...9.months.ago) }
+                  :roles    => ["Data Evangelist", "Salesforce Admin", "Database Management", "Analytics Intelligence"],
+                  :when     => ("2015.11.01".to_date..."2016.03.01".to_date) }
+
+        jobs << { :company  => "tzoa.com",
+                  :industry => "Internet of Things, Quantified Self",
+                  :roles    => ["Firmware Engineer", "Bluetooth protocol", "iOS/Android client app developer", "Analytics and Business Intelligence Consultant"],
+                  :when     => ("2015.05.01".to_date...Time.now.to_s) }
 
         jobs << { :company  => "Newland Systems/Accent Steel Manufacturing",
-                  :industry => "Brewing Equipment Manufacturer",
-                  :roles    => ["Salesforce Consultant", "Database Management", "Front-End Developer"],
-                  :when     => (1.5.year.ago...Time.now.to_s) }
+                  :industry => "Brewery Barrel System Fabricator & Manufacturer",
+                  :roles    => ["Salesforce Consultant", "Database Management", "Front-End APEX/Reactjs Developer"],
+                  :when     => ("2015.06.01".to_date...Time.now.to_s) }
 
         jobs << { :company  => "Rouxbe Cooking School",
                   :industry => "Web and Mobile Remote Education, Culinary Health and Wellness, Learning and Content Management System Development",
                   :roles    => ["Chief Technical Officer"],
-                  :when     => (3.year.ago...1.5.year.ago) }
+                  :when     => ("2014.09.01".to_date..."2015.09.01".to_date) }
 
         jobs << { :company  => "Crossfader.fm",
                   :industry => "Native Mobile Music/Entertainment App, Social Network and Community-contributed Internet Radio Station",
-                  :roles    => ["Co-founder"],
-                  :when     => (4.year.ago...3.year.ago) }
+                  :roles    => ["Co-founder, Chief Technical Officer"],
+                  :when     => ("2014.09.01".to_date..."2015.03.01".to_date) }
 
         jobs << { :company  => "Hybridity",
                   :industry => "Record Label, Installation and Sound Art, Interactive Visuals & Events",
                   :roles    => ["Technical Director", "Consultant"],
-                  :when     => (3.year.ago...2.year.ago) }
+                  :when     => ("2013.06.01".to_date..."2014.09.14".to_date) }
 
         jobs << { :company  => "Coverall Crew",
                   :industry => "Software as a Service, RoR Dojo",
                   :roles    => ["Technical Design", "Technical Lead"],
-                  :when     => (4.year.ago...2.year.ago) }
+                  :when     => ("2012.08.01".to_date..."2014.08.01".to_date) }
 
         jobs << { :company  => "Blitzoo Games Inc.",
                   :industry => "Online Social Gaming",
                   :roles    => ["Software Lead", "Platform Specialist"],
-                  :when     => (5.years.ago...4.year.ago) }
+                  :when     => ("2011.06.01".to_date..."2012.07.01".to_date) }
 
-        jobs << { :company  => "Microsoft",
+        jobs << { :company  => "BigPark => Microsoft/Games for Windows Live",
                   :industry => "Online Social Gaming, Platforms Expert, Computer Vision Expert",
                   :roles    => ["Software Engineer 2", "Platform Specialist", "User Experience Designer"],
-                  :when     => (6.5.years.ago..5.years.ago) }
+                  :when     => ("2009.01.01".to_date.."05.01.2011".to_date) }
 
 
         jobs << { :company  => "BigPark",
                   :industry => "Video Gaming",
                   :roles    => ["User Experience Designer", "Software Developer", "Sound Designer"],
-                  :when     => (8.years.ago..5.years.ago) }
+                  :when     => ("2008.09.01".to_date..."2009.01.01".to_date) }
 
         # TODO: add previous positions on request
 
