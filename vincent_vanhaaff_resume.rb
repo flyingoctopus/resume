@@ -145,7 +145,7 @@ class VincentVanHaaff < ActiveRecord::Base
 
   def self.inspect
     who << "
-    I am a passionate technical creative and engineer with over twelve years of commercial experience
+    I am a passionate technical creative and engineer with over fifteen years of commercial experience
     and full-stack skills in the design, development and maintenance of modern,
     user centered tech driven products and services. I also create engaging experiences for installation and
     video games on both the web and console, with a strong interest in  performance,
