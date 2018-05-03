@@ -46,6 +46,11 @@ module Experience
                   :roles    => ["Creative Director"],
                   :when     => ("2006.05.01".to_date...Time.now.to_s) }
 
+        jobs << { :company  => "Xeraflop Technologies Inc",
+                  :industry => "Medical Seed to Sale Tracking Software",
+                  :roles    => ["Full Stack Senior Software Engineer", "Mobile", "Web"],
+                  :when     => ("2017.04.01".to_date..."2018.01.01".to_date) }
+        
         jobs << { :company  => "Vancouver Airport Authority",
                   :industry => "Automated Border Control & Biometrics",
                   :roles    => ["Biometrics Research and Design", "Hardware Research", "ISO Compliance Research", "Optical Analysis"],
