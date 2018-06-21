@@ -8,24 +8,24 @@ module Skills
   def skills
     {
       :direction              => %w(User_Experience_Design Product_Design Behaviour_Design
-                                      Sound_Design Systems_Engineering Data_Visualization
+                                      Systems_Engineering Data_Visualization
                                       Startup_Consulting Data_Driven_Intelligence
                                     ),
-      :programming_languages  => %w(Ruby Objc Python JS Node PHP Scala Cpp openFrameworks
-                                      Java Processing C# dotNet Actionscript3 Apex
+      :programming_languages  => %w(Ruby Golang Swift Python JS Node PHP Scala Cpp openFrameworks
+                                      Java Processing C# Apex
                                     ),
-      :development_frameworks => %w(Rails Django Zend Drupal),
-      :database               => %w(MySQL Postres SQLite MongoDB Redis Salesforce),
+      :development_frameworks => %w(Rails Django CQRS Docker),
+      :database               => %w(MySQL Postres SQLite MongoDB Redis Salesforce Eventstore),
       :testing                => %w(Test::Unit MiniTest RSpec Shoulda
                                       Cucumber Selenium
                                     ),
       :orms                   => %w(ActiveRecord Sequel Mongoid MongoMapper),
-      :front_end              => %w(Angular React_js React Javascript CSS HTML
+      :front_end              => %w(React_js React Javascript CSS HTML
                                       OpenFrameworks Processing WebGL
-                                      Backbone Angular CoffeeScript Actionscript
+                                      Backbone CoffeeScript Webpack
                                     ),
       :scm                    => %w(Git Perforce Subversion),
-      :web_servers            => %w(Nginx Apache),
+      :web_servers            => %w(Nginx Apache AWS),
       :app_servers            => %w(Merb Phusion Passenger Mod_php WSGI)
 
     }
