@@ -13,14 +13,15 @@ class InteractiveShell
 
   def menu
     loop do
-      puts "\nPlease choose an option:"
+      puts "\nPlease choose an option and press enter:"
       puts "1. Render PDF"
       puts "2. Get in touch!"
       puts "3. View website"
       puts "4. Exit"
       print "> "
 
-      choice = $stdin.getch.strip
+      #choice = $stdin.getch.strip
+      choice = gets.strip
 
       case choice
       when '1'
@@ -31,6 +32,8 @@ class InteractiveShell
         view_website
       when '4'
         exit_program
+      when '42', 'secret'  # Easter egg triggers
+        easter_egg
       else
         puts "Invalid choice. Please try again."
       end
@@ -81,6 +84,13 @@ class InteractiveShell
   def view_website
     puts "Opening website #{@vincent.website}..."
     `open https://#{@vincent.website}`
+  end
+
+  def easter_egg
+    puts "\n🎉 Congratulations! You've found the Easter egg! 🎉"
+    puts "As a reward, here's a secret message:"
+    puts "\"The answer to life, the universe, and everything is 42.\""
+    puts "Feel free to explore more, or just take a moment to appreciate the little things. 😉"
   end
 
   def exit_program

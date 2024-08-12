@@ -1,7 +1,7 @@
 require 'active_support/all'
 require 'active_model'
-require_relative 'resume_pdf'
-require_relative 'interactive_shell'
+require_relative 'support/resume_pdf'
+require_relative 'support/interactive_shell'
 
 module Skills
   extend self
