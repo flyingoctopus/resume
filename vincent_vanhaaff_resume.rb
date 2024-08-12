@@ -80,7 +80,7 @@ module Experience
                 "Launched and scaled Kafka/Zookeeper/Akka/Atom Kubernetes clusters for IoT data ingestion.",
                 "Developed C++ libraries for distributed actor-driven systems.",
                 "Mentored junior developers.",
-                "Successfully deployed IoT data ingestion solution for Smart City pilot program for the City of Park City, Utah."
+                "Successfully deployed IoT data ingestion solution for Smart City pilot program for  Park City, Utah."
               ] }
 
     jobs << { company: "Xeraflop Technologies Inc.",
@@ -112,7 +112,7 @@ module Experience
               when: (parse_date("2015.11.01")...parse_date("2016.12.01")),
               description: [
                 "Implemented bulk data import processes and Salesforce tooling, integrating all SaaS products and creating data reporting tools for an internal digitization mandate.",
-                "Identified stakeholder requirements and formulated proposal for backops tooling rework, increasing overall non-profit overhead and team performance."
+                "Identified stakeholder requirements and formulated proposal for backops tooling rework, reducing eon-profit overhead and optimizing team performance."
               ] }
 
     jobs << { company: "tzoa.com",
@@ -120,7 +120,8 @@ module Experience
               roles: ["Hardware/Data Consultant"],
               when: (parse_date("2015.09.01")...parse_date("2016.03.01")),
               description: [
-                "Wrote firmware and mobile apps for air quality trackers, developing Bluetooth communication protocols and testing hardware/software communication."
+                "Wrote firmware and mobile apps for air quality trackers, developing Bluetooth communication protocols and testing hardware/software communication.",
+                "Assisted customers in planning their activities and protecting their health."
               ] }
 
     jobs << { company: "rouxbe dot com",
@@ -244,7 +245,7 @@ class VincentVanHaaff
     WHO
   end
 
-  def contact
+  def self.contact
     `open mailto:##{@first_name.downcase}@##{@last_name.downcase}.com`
   end
 
