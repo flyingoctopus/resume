@@ -1,5 +1,5 @@
 require_relative 'resume_actions'
-require_relative 'support/text_adventure_game'
+require_relative 'text_adventure_game'
 
 class InteractiveShell
   include ResumeActions
