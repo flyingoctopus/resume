@@ -33,8 +33,8 @@ Ensure you have the following installed:
 1. Clone the repository:
 
    ```bash
-   git clone https://github.com/yourusername/rubyresume.git
-   cd rubyresume
+   git clone https://github.com/flyingoctopus/resume.git
+   cd resume
    ```
 
 2. Install the required gems:
@@ -48,7 +48,7 @@ Ensure you have the following installed:
 You can run the resume project using the following command:
 
 ```bash
-ruby rubyresume.rb
+ruby vincent_vanhaaff_resume.rb
 ```
 
 ### Interactive Shell
