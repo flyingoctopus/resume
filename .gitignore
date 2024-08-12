@@ -1,0 +1,245 @@
+# ---- macOS ----
+.DS_Store
+.AppleDouble
+.LSOverride
+
+# ---- Windows ----
+Thumbs.db
+Desktop.ini
+
+# ---- Linux ----
+*~
+
+# ---- Node.js ----
+node_modules/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+.pnpm-debug.log*
+
+# ---- Python ----
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+*.env
+.env/
+.venv/
+venv/
+ENV/
+env.bak/
+venv.bak/
+coverage.xml
+*.cover
+*.py,cover
+*.log
+pip-log.txt
+pip-delete-this-directory.txt
+# Pyre type checker
+.pyre/
+# Cython debug symbols
+cython_debug/
+
+# ---- Java ----
+*.class
+*.jar
+*.war
+*.ear
+*.iml
+.idea/
+*.sublime-workspace
+*.project
+*.classpath
+*.settings/
+target/
+*.log
+
+# ---- Ruby ----
+*.gem
+*.rbc
+.rspec
+.rspec_status
+.yardoc
+_yardoc/
+.yard/
+coverage/
+InstalledFiles
+.rvm/
+.bundle/
+log/
+tmp/
+db/*.sqlite3
+db/*.sqlite3-journal
+public/system/
+public/uploads
+node_modules/
+vendor/bundle/
+vendor/cache/
+vendor/rails/
+vendor/gems/
+.env
+spring/
+tmp/
+
+# ---- Rust ----
+/target/
+**/*.rs.bk
+
+# ---- Go ----
+/bin/
+/pkg/
+/vendor/
+/Godeps/
+/dep/
+*.test
+
+# ---- C/C++ ----
+*.o
+*.a
+*.so
+*.d
+*.out
+*.log
+*.dSYM/
+*.exe
+*.obj
+*.pdb
+*.ilk
+*.exp
+*.lib
+*.dll
+*.idb
+
+# ---- Logs ----
+*.log
+*.log.*
+
+# ---- IDEs and Editors ----
+.idea/
+*.sublime-workspace
+*.code-workspace
+.vscode/
+*.swp
+*.swo
+*.sublime-project
+*.esproj
+*.esproj.user
+
+# ---- Miscellaneous ----
+*.env
+.env.*
+!.env.example
+*.bak
+*.tmp
+*.temp
+*.old
+*.orig
+*.save
+*~
+
+# ---- Compressed Files ----
+*.zip
+*.tar.gz
+*.rar
+*.7z
+*.gz
+*.bz2
+*.xz
+*.tgz
+
+# ---- Images ----
+*.png
+*.jpg
+*.jpeg
+*.gif
+*.bmp
+*.tiff
+*.ico
+*.svg
+*.psd
+*.xcf
+
+# ---- Archives ----
+*.zip
+*.tar.gz
+*.rar
+*.7z
+*.bz2
+*.xz
+*.tgz
+
+# ---- Certificates ----
+*.pem
+*.key
+*.crt
+
+# ---- Packages ----
+*.deb
+*.rpm
+*.apk
+*.dmg
+*.iso
+*.box
+
+# ---- Temporary Files ----
+*.tmp
+*.temp
+*.swp
+*.swo
+*.bak
+*.old
+*.pid
+
+# ---- Secrets ----
+*.key
+*.pem
+*.cer
+*.p12
+*.pfx
+
+# ---- Database Files ----
+*.db
+*.sqlite
+*.sqlite3
+*.mdb
+*.accdb
+*.h2.db
+*.log.db
+
+# ---- Backup Files ----
+*.bak
+*.bak.*
+
+# ---- Static Site Generators ----
+_site/
+.sass-cache/
+.jekyll-cache/
+.jekyll-metadata
+
+# ---- Terraform ----
+*.tfstate
+*.tfstate.*
+
+# ---- Ansible ----
+*.retry
+
+# ---- Chef ----
+.local-mode-cache/
+.nodes/
+.cache/
+
+# ---- Docker ----
+*.pid
+*.log
+logs/
+tmp/
+docker-compose.override.yml
+
+# ---- AWS ----
+*.tfplan
+.terraform/
+**/terraform.tfstate*
+
+# ---- Azure ----
+*.azure
+
