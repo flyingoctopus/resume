@@ -2,7 +2,7 @@
 
 ## Overview
 
-This project dynamically generates a resume written in Ruby as a professional PDF resume and provides an interactive shell for users to explore various functionalities, such as rendering the resume as a PDF, viewing a website, or contacting via email.
+This project dynamically generates a resume written in Ruby as a professional PDF resume and provides an interactive shell for users to explore various functionalities, such as rendering the resume as a PDF, viewing a website, or contacting via email. Take a look at [vincent_vanhaaff_resume.rb](vincent_vanhaaff_resume.rb)!
 
 ## Project Structure
 
