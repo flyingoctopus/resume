@@ -1,5 +1,5 @@
-# A sample Gemfile
-source "https://rubygems.org"
+source 'https://rubygems.org'
 
-# gem "rails"
-gem 'activerecord', '~> 4.2', '>= 4.2.5.1'
+gem 'activesupport', '~> 7.0'
+gem 'activerecord', '~> 7.0'
+gem 'prawn', '~> 2.4'
