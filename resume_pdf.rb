@@ -113,11 +113,11 @@ class ResumePDF < Prawn::Document
 
     desc.split(/(\*\*.*?\*\*|_.*?_)/).each do |segment|
       if segment.start_with?('**') && segment.end_with?('**')
-        formatted_text << { text: segment[2..-3], styles: [:bold], size: 14 }
+        formatted_text << { text: segment[2..-3], styles: [:bold], size: 12 }
       elsif segment.start_with?('_') && segment.end_with?('_')
-        formatted_text << { text: segment[1..-2], styles: [:italic], size: 14 }
+        formatted_text << { text: segment[1..-2], styles: [:italic], size: 12 }
       else
-        formatted_text << { text: segment, size: 14 }
+        formatted_text << { text: segment, size: 12 }
       end
     end
 
