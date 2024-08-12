@@ -1,4 +1,3 @@
-#require_relative 'resume_pdf'
 require 'io/console'
 
 class InteractiveShell
