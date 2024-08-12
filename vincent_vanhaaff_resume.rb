@@ -3,6 +3,80 @@ require 'active_model'
 require_relative 'support/resume_pdf'
 require_relative 'support/interactive_shell'
 
+class VincentVanHaaff
+  include ActiveModel::Model
+
+  attr_accessor :first_name, :last_name, :website, :phone
+
+  def initialize
+    @first_name = "Vincent"
+    @last_name = "van Haaff"
+    @website = "vvh.io"
+    @phone = "778.819.8605"
+  end
+
+  # Symbolic validations
+  validates_presence_of :innovation
+  validates_presence_of :learning_opportunities
+  validates_presence_of :friendly_team
+  validates_presence_of :pair_programming
+
+  def self.objectives
+    begin
+      returning Array.new do |objs|
+      objs << "Further develop my web development skills"
+      objs.push "Have fun while contributing to some smart people's growth plans"
+    end
+    rescue Exception => e
+      puts e
+      # TODO: retry harder
+    end
+  end
+
+  def self.contact
+    `open mailto:##{@first_name.downcase}@##{@last_name.downcase}.com`
+  end
+
+  def self.who
+    <<~WHO
+      I am a passionate technical creative and engineer with over eighteen years of commercial experience and full-stack skills in the design, development, and maintenance of modern, user-centered tech-driven products and services. I also create engaging experiences for installation and video games on both the web and console, with a strong interest in performance, engagement, clean efficient code, and accomplishing it with a strong team.
+
+      Besides work, I am a co-founder of Vancouver Maker Faire as well as Vancouver Hackspace and others. I am an educator, artist, and mentor living in Vancouver. I love climbing, cycling, good eats, and good times!
+    WHO
+  end
+
+  def self.inspect
+    who
+  end
+
+  def self.acknowledgements
+    [
+      "Stanford CCRMA Fellow",
+      "El Camino Math Olympian",
+      "Co-founder of Vancouver Mini-Makerfaire",
+      "Co-founder of Vancouver Hackspace",
+      "Co-founder of Aurora Digitalis"
+    ]
+  end
+
+  def self.method_missing(method, *args, &block)
+    if method =~ /^reference$/
+      raise StandardError, "Talk to me first!"
+    else
+      puts "Got any questions about #{method} (#{args.join(', ')})?" \
+      " then contact me!"
+      contact
+    end
+  end
+
+  private
+
+  def self.returning(value)
+    yield(value)
+    value
+  end
+end
+
 module Skills
   extend self
 
@@ -216,80 +290,6 @@ module Experience
               ] }
 
     jobs
-  end
-end
-
-class VincentVanHaaff
-  include ActiveModel::Model
-
-  attr_accessor :first_name, :last_name, :website, :phone
-
-  def initialize
-    @first_name = "Vincent"
-    @last_name = "van Haaff"
-    @website = "vvh.io"
-    @phone = "778.819.8605"
-  end
-
-  # Symbolic validations
-  validates_presence_of :innovation
-  validates_presence_of :learning_opportunities
-  validates_presence_of :friendly_team
-  validates_presence_of :pair_programming
-
-  def self.objectives
-    begin
-      returning Array.new do |objs|
-      objs << "Further develop my web development skills"
-      objs.push "Have fun while contributing to some smart people's growth plans"
-    end
-    rescue Exception => e
-      puts e
-      # TODO: retry harder
-    end
-  end
-
-  def self.contact
-    `open mailto:##{@first_name.downcase}@##{@last_name.downcase}.com`
-  end
-
-  def self.who
-    <<~WHO
-      I am a passionate technical creative and engineer with over eighteen years of commercial experience and full-stack skills in the design, development, and maintenance of modern, user-centered tech-driven products and services. I also create engaging experiences for installation and video games on both the web and console, with a strong interest in performance, engagement, clean efficient code, and accomplishing it with a strong team.
-
-      Besides work, I am a co-founder of Vancouver Maker Faire as well as Vancouver Hackspace and others. I am an educator, artist, and mentor living in Vancouver. I love climbing, cycling, good eats, and good times!
-    WHO
-  end
-
-  def self.inspect
-    who
-  end
-
-  def self.acknowledgements
-    [
-      "Stanford CCRMA Fellow",
-      "El Camino Math Olympian",
-      "Co-founder of Vancouver Mini-Makerfaire",
-      "Co-founder of Vancouver Hackspace",
-      "Co-founder of Aurora Digitalis"
-    ]
-  end
-
-  def self.method_missing(method, *args, &block)
-    if method =~ /^reference$/
-      raise StandardError, "Talk to me first!"
-    else
-      puts "Got any questions about #{method} (#{args.join(', ')})?" \
-      " then contact me!"
-      contact
-    end
-  end
-
-  private
-
-  def self.returning(value)
-    yield(value)
-    value
   end
 end
 
