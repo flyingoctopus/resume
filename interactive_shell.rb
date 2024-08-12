@@ -79,17 +79,6 @@ class InteractiveShell
     end
   end
 
-
-  #def get_in_touch
-    #puts "Opening mailto:#{@vincent.first_name.downcase}@#{@vincent.last_name.downcase.gsub(' ', '')}.com"
-    #@vincent.contact
-  #end
-
-  #def get_in_touch
-    #puts "Opening mailto:#{@vincent.first_name.downcase}@#{@vincent.last_name.downcase.gsub(' ', '')}.com"
-    #VincentVanHaaff.contact
-  #end
-
   def view_website
     puts "Opening website #{@vincent.website}..."
     `open https://#{@vincent.website}`
