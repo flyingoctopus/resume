@@ -84,7 +84,7 @@ tmp/
 #temporary
 Gemfile.lock
 #/temporary
-build/
+build/**
 
 # ---- Rust ----
 /target/
