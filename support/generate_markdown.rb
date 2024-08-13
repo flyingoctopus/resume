@@ -12,7 +12,7 @@ class GenerateMarkdown
     markdown << "[#{@vincent.website}](https://#{@vincent.website}) | [#{@vincent.phone}](tel:#{@vincent.phone.gsub(' ', '')}) | [LinkedIn](https://#{@vincent.linkedin})"
     markdown << "\n## Summary\n#{VincentVanHaaff.who}"
     markdown << "\n## Skills"
-    
+
     Experience.skills.each do |category, skills|
       markdown << "### #{category.to_s.humanize}"
       markdown << skills.map { |skill| "- #{skill}" }.join("\n")
@@ -32,14 +32,20 @@ class GenerateMarkdown
   end
 
   def save_to_file(content)
-    # Ensure the static/ directory exists
-    FileUtils.mkdir_p("../static")
+    # Determine the top-level directory of the git repository
+    repo_root = `git rev-parse --show-toplevel`.strip
 
-    File.open("../static/vincent_vanhaaff_resume.md", "w") do |file|
+    # Construct the path to the static/ directory within the repository
+    static_dir = File.join(repo_root, 'static')
+    FileUtils.mkdir_p(static_dir)
+
+    # Save the file to the static/ directory
+    file_path = File.join(static_dir, "vincent_vanhaaff_resume.md")
+    File.open(file_path, "w") do |file|
       file.write(content)
     end
 
-    puts "Markdown file generated at ../static/vincent_vanhaaff_resume.md"
+    puts "Markdown file generated at #{file_path}"
   end
 end
 
