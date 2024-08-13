@@ -121,7 +121,7 @@ To generate a Markdown version of the resume for use as a static website, run th
 ruby support/generate_markdown.rb
 ```
 
-The generated Markdown file will be saved in the `static/` directory.
+The generated Markdown file will be saved in the `build/` directory.
 
 ### Customization
 
