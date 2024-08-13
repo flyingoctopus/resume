@@ -2,21 +2,26 @@
 
 ## Overview
 
-This project dynamically generates a resume written in Ruby as a professional PDF resume and provides an interactive shell for users to explore various functionalities, such as rendering the resume as a PDF, viewing a website, or contacting via email. Take a look at [vincent_vanhaaff_resume.rb](vincent_vanhaaff_resume.rb)!
+This project dynamically generates a resume written in Ruby as a professional PDF resume, provides an interactive shell for users to explore various functionalities, and even includes a text adventure game inspired by classic Infocom games like Zork. Take a look at [vincent_vanhaaff_resume.rb](vincent_vanhaaff_resume.rb) to see how it all comes together!
 
 ## Project Structure
 
-The project consists of three main Ruby files:
+The project consists of several Ruby files, each with a specific purpose:
 
-- `rubyresume.rb`: The core file that defines the `VincentVanHaaff` class, manages skills, experience, and other resume-related data.
-- `resume_pdf.rb`: Handles the PDF generation using the `Prawn` library.
-- `interactive_shell.rb`: Provides an interactive command-line interface for users to interact with the resume.
+- `vincent_vanhaaff_resume.rb`: The core file that defines the `VincentVanHaaff` class, managing skills, experience, and other resume-related data.
+- `support/resume_pdf.rb`: Handles the PDF generation using the `Prawn` library.
+- `support/interactive_shell.rb`: Provides an interactive command-line interface for users to interact with the resume.
+- `support/text_adventure_game.rb`: A text-based adventure game that lets users explore Vincent's office and interact with the resume content in a playful way.
+- `support/generate_markdown.rb`: Generates a Markdown version of the resume for use as a static website.
+- `support/resume_actions.rb`: Contains shared methods for rendering PDFs, opening links, and other actions used across the application.
 
 ## Features
 
 - **Resume PDF Generation**: Generate a PDF version of the resume with the latest data.
 - **Interactive Shell**: Allows users to interact with the resume data through a command-line interface.
-- **Hyperlinks**: The generated PDF includes clickable links for email and website.
+- **Text Adventure Game**: Explore Vincent's office and interact with objects in a text-based game.
+- **Markdown Resume Generation**: Convert the resume data into a Markdown file for use as a static website.
+- **Hyperlinks**: The generated PDF includes clickable links for email, website, and LinkedIn.
 - **Customizable Content**: Easily update skills, experience, and acknowledgements.
 
 ## Getting Started
@@ -27,6 +32,41 @@ Ensure you have the following installed:
 
 - Ruby 2.5 or higher
 - Bundler (to manage gem dependencies)
+
+### Installing Ruby
+
+To manage different Ruby versions on your system, it is recommended to use a Ruby version manager like `rbenv` or `RVM`. These tools allow you to install and switch between multiple versions of Ruby.
+
+#### Installing with `rbenv`
+
+1. Install `rbenv` and `ruby-build`:
+
+   ```bash
+   curl -fsSL https://github.com/rbenv/rbenv-installer/raw/main/bin/rbenv-installer | bash
+   ```
+
+2. Add `rbenv` to your shell:
+
+   ```bash
+   echo 'export PATH="$HOME/.rbenv/bin:$PATH"' >> ~/.bashrc
+   echo 'eval "$(rbenv init - bash)"' >> ~/.bashrc
+   source ~/.bashrc
+   ```
+
+3. Install a specific Ruby version (e.g., 3.0.0):
+
+   ```bash
+   rbenv install 3.0.0
+   rbenv global 3.0.0
+   ```
+
+4. Verify the installation:
+
+   ```bash
+   ruby -v
+   ```
+
+For more detailed instructions and alternative installation methods, visit the [official Ruby installation guide](https://www.ruby-lang.org/en/documentation/installation/).
 
 ### Installation
 
@@ -56,16 +96,19 @@ ruby vincent_vanhaaff_resume.rb
 After running the script, you will be presented with an interactive shell:
 
 ```
-Welcome to Vincent van Haaff's Interactive Resume!
+🎉 Welcome to Vincent van Haaff's Interactive Resume! 🎉
 
 Summary:
 I am a passionate technical creative and engineer...
 
-Please choose an option:
-1. Render PDF
-2. Get in touch!
-3. View website
-4. Exit
+🔍 What would you like to do? Please choose an option and press enter:
+1. 📄 Render PDF
+2. ✉️ Get in touch!
+3. 🌐 View website
+4. 💼 View LinkedIn Profile
+5. 🧭 Explore
+6. 🎮 Let's Play A Text Adventure Game
+7. 🚪 Exit
 ```
 
 #### Options:
@@ -73,11 +116,24 @@ Please choose an option:
 - **Render PDF**: Generates a PDF of the resume and opens it automatically.
 - **Get in touch**: Opens your default email client with a pre-filled "mailto" link.
 - **View website**: Opens the default web browser to your personal website.
+- **View LinkedIn Profile**: Opens the default web browser to your LinkedIn profile.
+- **Explore**: Dive deeper into the resume content by exploring personal details, acknowledgements, and objectives.
+- **Text Adventure Game**: Engage in a fun, text-based adventure game set in Vincent's office.
 - **Exit**: Exits the interactive shell.
+
+### Markdown Resume Generation
+
+To generate a Markdown version of the resume for use as a static website, run the following command:
+
+```bash
+ruby support/generate_markdown.rb
+```
+
+The generated Markdown file will be saved in the `static/` directory.
 
 ### Customization
 
-You can customize the resume content by editing the `rubyresume.rb` file. Here, you can update:
+You can customize the resume content by editing the `vincent_vanhaaff_resume.rb` file. Here, you can update:
 
 - **Personal Information**: Name, website, phone number, etc.
 - **Skills**: Programming languages, tools, and other competencies.
@@ -89,6 +145,7 @@ You can customize the resume content by editing the `rubyresume.rb` file. Here, 
 This project relies on the following Ruby gems:
 
 - `prawn`: For PDF generation.
+- `mini_magick`: For image processing in PDF generation.
 - `active_support`: For various utility methods and extensions.
 - `active_model`: For object modeling.
 
