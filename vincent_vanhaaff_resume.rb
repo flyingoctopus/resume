@@ -126,6 +126,7 @@ module Experience
                 "Crafted embedded firmware and infrastructure for an AI-driven audio DSP project on the Xtensa platform.",
                 "Produced real-time embedded software for next-gen Bluetooth earbuds.",
                 "Enhanced audio DSP pipeline reliability with low-level drivers and middleware in C.",
+                "Optimized on-device model inferencing to bring extremely low power and low latency ai-driven AINR & DSP to market.",
                 "Conducted system debugging, maintained code quality, and provided detailed technical documentation for project stakeholders.",
                 "Delivered project requirements on time ensuring _client satisfaction_."
               ] }
