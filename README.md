@@ -28,9 +28,10 @@ The project consists of several Ruby files, each with a specific purpose:
 
 ### Prerequisites
 
-Ensure you have the following installed:
+We will ensure you have the following installed:
 
-- macOS with Homebrew installed
+- Ruby 3.0 or later
+- Bundler gem for installing packages
 
 ### Installing Ruby
 
@@ -68,8 +69,12 @@ For more detailed instructions and alternative installation methods for other OS
    git clone https://github.com/flyingoctopus/resume.git
    cd resume
    ```
-
-2. Install the required gems:
+2. Install bundler:
+   ```bash
+   gem install bundler
+   ```
+   
+3. Install the required gems:
 
    ```bash
    bundle install
