@@ -27,6 +27,7 @@ GEM
       concurrent-ruby (~> 1.0)
     logger (1.6.0)
     matrix (0.4.2)
+    mini_magick (5.0.1)
     minitest (5.24.1)
     pdf-core (0.10.0)
     prawn (2.5.0)
@@ -47,6 +48,7 @@ PLATFORMS
 DEPENDENCIES
   activerecord (~> 7.0)
   activesupport (~> 7.0)
+  mini_magick (~> 5.0.1)
   prawn (~> 2.4)
 
 BUNDLED WITH

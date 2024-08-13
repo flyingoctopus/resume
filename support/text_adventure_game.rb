@@ -55,7 +55,8 @@ class TextAdventureGame
     puts format_text("1. Talk to Vincent")
     puts format_text("2. Use the phone")
     puts format_text("3. Open the mailbox")
-    puts format_text("4. Go back to the living room")
+    puts format_text("4. View LinkedIn Profile")
+    puts format_text("5. Go back to the living room")
     print "> "
 
     choice = gets.strip.downcase
@@ -68,6 +69,8 @@ class TextAdventureGame
     when '3'
       @location = :mailbox
     when '4'
+      view_linkedin
+    when '5'
       @location = :living_room
     else
       puts format_text("I don't understand that command.")

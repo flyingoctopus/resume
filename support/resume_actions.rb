@@ -1,4 +1,3 @@
-# support/resume_actions.rb
 module ResumeActions
   def render_pdf
     puts format_text("📄 Rendering PDF...")
@@ -32,6 +31,22 @@ module ResumeActions
       system("start", mailto)      # Windows
     else
       puts format_text("⚠️ Unsupported platform. Please open your email client manually.")
+    end
+  end
+
+  def view_linkedin
+    linkedin_url = "https://#{@vincent.linkedin}"
+    puts format_text("💼 Opening LinkedIn profile #{linkedin_url}...")
+
+    case RUBY_PLATFORM
+    when /darwin/
+      system("open", linkedin_url)       # macOS
+    when /linux/
+      system("xdg-open", linkedin_url)   # Linux
+    when /mingw|mswin/
+      system("start", linkedin_url)      # Windows
+    else
+      puts format_text("⚠️ Unsupported platform. Please open your browser manually.")
     end
   end
 

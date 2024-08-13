@@ -6,12 +6,13 @@ require_relative 'support/interactive_shell'
 class VincentVanHaaff
   include ActiveModel::Model
 
-  attr_accessor :first_name, :last_name, :website, :phone
+  attr_accessor :first_name, :last_name, :website, :linkedin, :phone
 
   def initialize
     @first_name = "Vincent"
     @last_name = "van Haaff"
     @website = "vvh.io"
+    @linkedin = "www.linkedin.com/in/vincentvanh/"
     @phone = "778.819.8605"
   end
 
@@ -43,10 +44,6 @@ class VincentVanHaaff
 
       Besides work, I am a co-founder of Vancouver Maker Faire as well as Vancouver Hackspace and others. I am an educator, artist, and mentor living in Vancouver. I love climbing, cycling, good eats, and good times!
     WHO
-  end
-
-  def self.inspect
-    who
   end
 
   def self.acknowledgements
@@ -84,7 +81,7 @@ module Skills
     {
       engineering_direction: %w(User_Experience_Design Product_Design Systems_Engineering Data_Visualization 
                                 Startup_Consulting Data_Driven_Intelligence Behaviour_Design),
-      programming_languages: %w(C C++ Rust Ruby Golang Swift Python TensorFlow Node),
+      programming_languages: %w(C C++ Rust Ruby Golang Swift Python TensorFlow Node CUDA),
       web_development: %w(HTML CSS JavaScript React_js WebGL Webpack OpenFrameworks Processing),
       frameworks_tools: %w(Rails Django CQRS Docker),
       databases: %w(MySQL Postgres SQLite MongoDB Redis Salesforce Eventstore),
@@ -186,10 +183,10 @@ module Experience
               when: (parse_date("2015.11.01")...parse_date("2016.12.01")),
               description: [
                 "Implemented bulk data import processes and Salesforce tooling, integrating all SaaS products and creating data reporting tools for an internal digitization mandate.",
-                "Identified stakeholder requirements and formulated proposal for backops tooling rework, reducing eon-profit overhead and optimizing team performance."
+                "Identified stakeholder requirements and formulated proposal for backops tooling rework, reducing non-profit overhead and optimizing team performance."
               ] }
 
-    jobs << { company: "tzoa.com",
+    jobs << { company: "tzoa dot com",
               industry: "Internet of Things, Quantified Self",
               roles: ["Hardware/Data Consultant"],
               when: (parse_date("2015.09.01")...parse_date("2016.03.01")),

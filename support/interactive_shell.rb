@@ -23,9 +23,10 @@ class InteractiveShell
       puts format_text("1. 📄 Render PDF")
       puts format_text("2. ✉️ Get in touch!")
       puts format_text("3. 🌐 View website")
-      puts format_text("4. 🧭 Explore")
-      puts format_text("5. 🎮 Let's Play A Text Adventure Game")
-      puts format_text("6. 🚪 Exit")
+      puts format_text("4. 💼 View LinkedIn Profile")
+      puts format_text("5. 🧭 Explore")
+      puts format_text("6. 🎮 Let's Play A Text Adventure Game")
+      puts format_text("7. 🚪 Exit")
       print "> "
 
       choice = gets.strip
@@ -38,10 +39,12 @@ class InteractiveShell
       when '3'
         view_website
       when '4'
-        explore
+        view_linkedin
       when '5'
-        play_text_adventure_game
+        explore
       when '6'
+        play_text_adventure_game
+      when '7'
         exit_program
       when '42', 'secret'
         easter_egg
@@ -54,6 +57,11 @@ class InteractiveShell
   def view_website
     puts format_text("🌐 Opening website #{@vincent.website}...")
     `open https://#{@vincent.website}`
+  end
+
+  def view_linkedin
+    puts format_text("💼 Opening LinkedIn profile #{@vincent.linkedin}...")
+    `open https://#{@vincent.linkedin}`
   end
 
   def explore
