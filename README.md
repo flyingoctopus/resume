@@ -1,8 +1,8 @@
-# Vincent's Resume Builder
+# Vincent's Resume
 
 ## Overview
 
-This project dynamically generates a resume written in Ruby as a professional PDF resume, provides an interactive shell for users to explore various functionalities, and even includes a text adventure game inspired by classic Infocom games like Zork. Take a look at [vincent_vanhaaff_resume.rb](vincent_vanhaaff_resume.rb) to see how it all comes together!
+This project creatively showcases and dynamically generates my resume. It is written in Ruby as a professional PDF and markdown resume generator, provides an interactive shell for users to explore various functionalities, and even includes a text adventure game inspired by classic Infocom games like Zork. Take a look at [vincent_vanhaaff_resume.rb](vincent_vanhaaff_resume.rb) to see how it all comes together!
 
 ## Project Structure
 
