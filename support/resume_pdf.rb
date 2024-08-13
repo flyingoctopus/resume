@@ -14,10 +14,13 @@ class ResumePDF < Prawn::Document
     })
     font("Helvetica")
 
-    repeat(:all) { centered_header }  # Repeats the centered header on all pages
+    repeat(:all) do
+      centered_header
+      #footer_text
+    end
 
     # Render the skills summary in the sidebar column first
-    bounding_box([bounds.width * 0.75, cursor + 0], width: bounds.width * 0.25, height: bounds.height - 155) do
+    bounding_box([bounds.width * 0.75, cursor + 5], width: bounds.width * 0.25, height: bounds.height - 150) do
       skills_summary
     end
 
@@ -78,8 +81,8 @@ class ResumePDF < Prawn::Document
         { text: mailto_link, link: mailto_link, styles: [:underline] },
         { text: " | ", styles: [] },
         { text: "#{@vincent.phone}", link: "tel:#{@vincent.phone.gsub(' ', '')}", styles: [:underline] },
-        { text: " | ", styles: [] },
-        { text: "LinkedIn", link: "https://#{@vincent.linkedin}", styles: [:underline] }
+        #{ text: " | ", styles: [] },
+        #{ text: "LinkedIn", link: "https://#{@vincent.linkedin}", styles: [:underline] }
       ]
       text formatted_text.map { |entry| entry[:text] }.join, align: :center, inline_format: true
     end
@@ -119,6 +122,14 @@ class ResumePDF < Prawn::Document
     circular_image.write(tempfile.path)
 
     tempfile
+  end
+
+  def footer_text
+    bounding_box([bounds.left, bounds.bottom + 25], width: bounds.width) do
+      font("Helvetica", size: 6) do
+        text "PDF resume generated my resume written in Ruby", align: :center
+      end
+    end
   end
 
   def mailto_link
