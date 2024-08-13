@@ -290,5 +290,7 @@ module Experience
   end
 end
 
-# Start the interactive shell
-InteractiveShell.new.start
+# Only start the interactive shell if this file is run as the main program
+if __FILE__ == $0
+  InteractiveShell.new.start
+end
