@@ -30,34 +30,26 @@ The project consists of several Ruby files, each with a specific purpose:
 
 Ensure you have the following installed:
 
-- Ruby 2.5 or higher
-- Bundler (to manage gem dependencies)
+- macOS with Homebrew installed
 
 ### Installing Ruby
 
-To manage different Ruby versions on your system, it is recommended to use a Ruby version manager like `rbenv` or `RVM`. These tools allow you to install and switch between multiple versions of Ruby.
+To quickly install Ruby on macOS (system Ruby requires sudo now, ew), you can use Homebrew, which is a popular package manager for macOS.
 
-#### Installing with `rbenv`
+1. Install Homebrew if you haven't already. Follow the instructions
+   [here](https://brew.sh) if you need help.
 
-1. Install `rbenv` and `ruby-build`:
+2. Install Ruby using Homebrew:
 
    ```bash
-   curl -fsSL https://github.com/rbenv/rbenv-installer/raw/main/bin/rbenv-installer | bash
+   brew install ruby
    ```
 
-2. Add `rbenv` to your shell:
+3. Add Ruby to your `PATH`:
 
    ```bash
-   echo 'export PATH="$HOME/.rbenv/bin:$PATH"' >> ~/.bashrc
-   echo 'eval "$(rbenv init - bash)"' >> ~/.bashrc
-   source ~/.bashrc
-   ```
-
-3. Install a specific Ruby version (e.g., 3.0.0):
-
-   ```bash
-   rbenv install 3.0.0
-   rbenv global 3.0.0
+   echo 'export PATH="/usr/local/opt/ruby/bin:$PATH"' >> ~/.zshrc
+   source ~/.zshrc
    ```
 
 4. Verify the installation:
@@ -66,7 +58,7 @@ To manage different Ruby versions on your system, it is recommended to use a Rub
    ruby -v
    ```
 
-For more detailed instructions and alternative installation methods, visit the [official Ruby installation guide](https://www.ruby-lang.org/en/documentation/installation/).
+For more detailed instructions and alternative installation methods for other OSes, visit the [official Ruby installation guide](https://www.ruby-lang.org/en/documentation/installation/).
 
 ### Installation
 
@@ -163,6 +155,6 @@ This project is licensed under the MIT License. See the `LICENSE` file for more 
 
 Special thanks to the open-source community for providing the tools and libraries used in this project.
 
-Technical resume: vincent_vanhaaff_resume.rb
-Site: https://vvh.io
+Technical resume: vincent_vanhaaff_resume.rb  
+Site: https://vvh.io  
 Old boring resume: http://resume.linkedinlabs.com/6lz5adls
