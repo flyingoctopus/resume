@@ -36,7 +36,7 @@ class GenerateMarkdown
     repo_root = `git rev-parse --show-toplevel`.strip
 
     # Construct the path to the static/ directory within the repository
-    static_dir = File.join(repo_root, 'static')
+    static_dir = File.join(repo_root, 'build')
     FileUtils.mkdir_p(static_dir)
 
     # Save the file to the static/ directory

@@ -81,6 +81,11 @@ vendor/gems/
 spring/
 tmp/
 
+#temporary
+Gemfile.lock
+#/temporary
+build/
+
 # ---- Rust ----
 /target/
 **/*.rs.bk
