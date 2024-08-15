@@ -25,7 +25,7 @@ class VincentVanHaaff
   def self.objectives
     begin
       returning Array.new do |objs|
-      objs << "Further develop my web development skills"
+      objs << "Further develop my development skills"
       objs.push "Have fun while contributing to some smart people's growth plans"
     end
     rescue Exception => e
